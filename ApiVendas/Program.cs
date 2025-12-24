@@ -1,10 +1,10 @@
 using ApiVendas.Infra;
-using Microsoft.EntityFrameworkCore; // NOVO: Importe o EF Core
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<AppDbContext>(options => .UseInMemoryDatabase("VendasDb")); // "VendasDb" é o nome do banco fake
+builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("VendasDb"));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

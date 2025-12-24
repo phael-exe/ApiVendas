@@ -1,5 +1,4 @@
-﻿using API_Vendas.Domain;
-using ApiVendas.Domain;
+﻿using ApiVendas.Domain;
 using ApiVendas.Infra;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

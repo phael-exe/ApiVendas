@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq; // Importante para usar o .Any() e .FirstOrDefault()
+using System.Linq;
 
-namespace API_Vendas.Domain
+namespace ApiVendas.Domain
 {
     public class Pedido
     {

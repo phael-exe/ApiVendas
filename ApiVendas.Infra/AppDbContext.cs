@@ -1,8 +1,8 @@
-﻿using API_Vendas.Domain;
-using ApiVendas.Domain;
+﻿using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Reflection.Emit;
+using ApiVendas.Domain; 
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace ApiVendas.Infra
 {

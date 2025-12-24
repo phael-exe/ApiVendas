@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace API_Vendas.Domain
+namespace ApiVendas.Domain
 {
     public class Produto
     {
