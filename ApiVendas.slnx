@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ApiVendas.Domain/API-Vendas.Domain.csproj" />
+  <Project Path="ApiVendas.Infra/API-Vendas.Infra.csproj" />
+  <Project Path="ApiVendas/ApiVendas.csproj" />
+</Solution>
