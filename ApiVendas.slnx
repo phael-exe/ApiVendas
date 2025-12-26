@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="ApiVendas.Domain/API-Vendas.Domain.csproj" />
   <Project Path="ApiVendas.Infra/API-Vendas.Infra.csproj" />
+  <Project Path="ApiVendas.Tests/ApiVendas.Tests.csproj" Id="2c82503a-fc8a-43b0-ad58-8c9014211fb7" />
   <Project Path="ApiVendas/ApiVendas.csproj" />
 </Solution>
