@@ -20,14 +20,10 @@ namespace ApiVendas.Infra
             base.OnModelCreating(modelBuilder);
 
             // Configuração do Pedido
-            modelBuilder.Entity<Pedido>(entity =>
+            modelBuilder.Entity<Produto>(entity =>
             {
-                entity.HasKey(e => e.Id);
-
-                // Ensina o EF Core a usar o campo privado '_produtos'
-                // em vez de tentar usar a propriedade somente leitura.
-                entity.Metadata.FindNavigation(nameof(Pedido.Produtos))
-                      .SetPropertyAccessMode(PropertyAccessMode.Field);
+                entity.HasKey(p => p.Id);
+                entity.Property(p => p.Id).ValueGeneratedNever();
             });
         }
     }
