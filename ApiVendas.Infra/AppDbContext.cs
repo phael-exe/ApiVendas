@@ -20,11 +20,18 @@ namespace ApiVendas.Infra
             base.OnModelCreating(modelBuilder);
 
             // Configuração do Pedido
+            modelBuilder.Entity<Pedido>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.Metadata.FindNavigation(nameof(Pedido.Produtos))
+                      .SetPropertyAccessMode(PropertyAccessMode.Field);
+            });
+
             modelBuilder.Entity<Produto>(entity =>
             {
                 entity.HasKey(p => p.Id);
                 entity.Property(p => p.Id).ValueGeneratedNever();
-            });
+            }); ;
         }
     }
 }
